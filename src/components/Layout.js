@@ -8,8 +8,8 @@ import "../assets/css/main.css"
 const Layout = ({children}) => {
     return (
         <>
-            {children}
             <Navbar />
+            {children}
             <Footer />
         </>
     )

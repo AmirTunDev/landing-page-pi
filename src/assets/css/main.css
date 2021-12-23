@@ -492,11 +492,11 @@ form > *:last-child {
 /* About */
 /*#########*/
 
-.about-page h2 {
+.inscription-page h1 {
   text-transform: none;
   font-weight: bold;
 }
-.about-page {
+.inscription-page {
   display: grid;
   gap: 2rem 4rem;
   padding-bottom: 3rem;
@@ -507,7 +507,7 @@ form > *:last-child {
 }
 
 @media screen and (min-width: 992px) {
-  .about-page {
+  .inscription-page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 400px;
