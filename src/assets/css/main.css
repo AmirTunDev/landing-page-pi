@@ -501,7 +501,7 @@ form > *:last-child {
   gap: 2rem 4rem;
   padding-bottom: 3rem;
 }
-.about-img {
+.inscription-img {
   border-radius: var(--borderRadius);
   height: 500px;
 }
@@ -512,7 +512,7 @@ form > *:last-child {
     align-items: center;
     height: 400px;
   }
-  .about-img {
+  .inscription-img {
     height: 100%;
   }
 }
@@ -703,7 +703,7 @@ form > *:last-child {
   display: grid;
   gap: 3rem;
 }
-.recipe-hero .about-img {
+.recipe-hero .inscription-img {
   height: 400px;
 }
 .recipe-icons {

@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+
 const Inscription = () => {
     return (
         <Layout>
@@ -23,6 +24,8 @@ const Inscription = () => {
                     <StaticImage 
                         src='../assets/images/inscriptions.png' 
                         alt='inscriptions universitaires'
+                        className='inscription-img'
+                        placeholder='blurred'
                     />
                 </section>
             </main>
