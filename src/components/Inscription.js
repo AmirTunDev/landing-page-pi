@@ -1,12 +1,10 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 
 const Inscription = () => {
     return (
-        <Layout>
             <main className='page'> 
                 <section className='inscription-page'>
                     <article>
@@ -29,7 +27,7 @@ const Inscription = () => {
                     />
                 </section>
             </main>
-        </Layout>
+        
     )
 }
 
