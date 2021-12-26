@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata:{
+    title:'Polytech international',
+    description:"website of polytech international university",
+    author:"@AmirHamada,@SyrineHamada"
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
