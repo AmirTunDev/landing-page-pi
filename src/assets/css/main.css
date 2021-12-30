@@ -189,13 +189,23 @@ textarea {
 hr {
   border-top: var(--line);
 }
-
+.btn-about{
+  background-color: #f44336;
+  font-size: 20px;
+  width: 150px;
+  margin-left: 45%;
+  padding-left: 3%;
+  border: none;
+  border-radius: var(--borderRadius);
+  color: white;
+}
 button,
 .btn {
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: var(--primary-500);
+  /*background: var(--primary-500);*/
+  background-color: red;
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -492,9 +502,28 @@ form > *:last-child {
 /* About */
 /*#########*/
 
+.about-page {
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+.about-page-h2 {
+  text-transform: none;
+  font-weight: bold;
+  color: red;
+  display: flex;
+  justify-content: center;
+  
+}
+.about-page-p{
+  display: block;
+  padding-left: 40%;
+  
+}
 .inscription-page h1 {
   text-transform: none;
   font-weight: bold;
+  color: red;
 }
 .inscription-page {
   display: grid;
