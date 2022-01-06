@@ -23,7 +23,7 @@
   --primary-1000: #191740;
   --primary-1100: #0a0919;
   /* grey */
-  --grey-0: #fafbfc;
+  --grey-0: #white;
   --grey-50: #f2f4f8;
   --grey-100: #eaedf3;
   --grey-200: #e2e7ef;
@@ -64,7 +64,6 @@
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
   --fixed-width: 600px;
 }
 html {
@@ -87,6 +86,8 @@ body {
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
+  width: 100%;
+height : 100vh
 }
 
 p {
@@ -214,6 +215,21 @@ button,
   transition: var(--transition);
   text-transform: capitalize;
 }
+.btnR {
+  cursor: pointer;
+  appearance: none;
+  color: var(--white);
+  /*background: var(--primary-500);*/
+  background-color: red;
+  border: none;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  padding: 0.375rem 0.75rem;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+}
+
 button:hover,
 .btn:hover {
   color: var(--white);
@@ -507,6 +523,13 @@ form > *:last-child {
   gap: 2rem 4rem;
   padding-bottom: 3rem; 
 }
+.about-h2 {
+  text-transform: none;
+  font-weight: bold;
+  color: red;
+  display: flex;
+  
+}
 .about-page-h2 {
   text-transform: none;
   font-weight: bold;
@@ -517,7 +540,6 @@ form > *:last-child {
 }
 .about-page-p{
   display: block;
-  padding-left: 40%;
   
 }
 .inscription-page h1 {
@@ -539,7 +561,6 @@ form > *:last-child {
   .inscription-page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 400px;
   }
   .inscription-img {
     height: 100%;

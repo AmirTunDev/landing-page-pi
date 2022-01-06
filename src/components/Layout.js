@@ -14,10 +14,10 @@ const Layout = ({children}) => {
         <>
             <Navbar />
             {children}
-            <Inscription />
-            <About />
+             <Inscription />
+            {/* <About />
             <Gallery />
-            <VieUniversite />
+            <VieUniversite /> */}
             <Footer />
         </>
     )
