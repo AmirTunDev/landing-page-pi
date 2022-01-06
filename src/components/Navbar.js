@@ -4,6 +4,7 @@ import {FaAlignJustify} from 'react-icons/fa'
 import {BsSearch} from 'react-icons/bs'
 import logo from '../assets/images/logo.png'
 
+
 const Navbar = () => {
     const [show,setShow] = useState(false);
     return (
