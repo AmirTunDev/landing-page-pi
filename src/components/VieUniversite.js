@@ -1,7 +1,8 @@
 import React from 'react'
-import { useStaticQuery,graphql } from 'gatsby'
+//import { useStaticQuery,graphql } from 'gatsby'
 import styled from 'styled-components'
 import articleImage from '../assets/images/article.png'
+import { Link } from 'gatsby'
 
 /*const Myquery = graphql`
     {
@@ -42,8 +43,10 @@ const VieUniversite = () => {
                             consistorium annonas si.
                         </p>
                     </article>
-                    <btn />
                 </section>
+                <Link to='/' className='btn-article'>
+                        S'inscrire
+                </Link>
             </Wrapper>
         </div>
     )
@@ -73,6 +76,16 @@ const Wrapper = styled.section`
     .articleImage{
         width:35%;
         height:50%
+    }
+    .btn-article{
+        background-color: #f44336;
+        font-size: 20px;
+        width: 150px;
+        margin-left: 45%;
+        padding-left: 3%;
+        border: none;
+        border-radius: var(--borderRadius);
+        color: white;
     }
 
 `
