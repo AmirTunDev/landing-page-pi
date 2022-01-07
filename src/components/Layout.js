@@ -5,6 +5,7 @@ import Inscription from "./Inscription"
 import About from './About'
 import Gallery from './Gallery'
 import VieUniversite from './VieUniversite'
+import Speciality from './Speciality'
 
 import "normalize.css"
 import "../assets/css/main.css"
@@ -17,9 +18,8 @@ const Layout = ({children}) => {
              <Inscription />
              <Gallery />
              <VieUniversite />
-            {/* <About />
-            <Gallery />
-            <VieUniversite /> */}
+             <Speciality />
+            {/* <About />*/}
             <Footer />
         </>
     )

@@ -27,7 +27,7 @@ const Gallery = () => {
     return (
         <Wrapper>
             <div className='gallery-headings'>
-                <h2 className='about-h2'>Evenements</h2>
+                <h2 className='about-h2'>Événements</h2>
             </div>
             {nodes.map((image,index)=>{
                 const { name } = image
