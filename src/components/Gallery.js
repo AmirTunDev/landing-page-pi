@@ -34,6 +34,7 @@ const Gallery = () => {
                 const pathToImage = getImage(image)
                 console.log(name)
                 return (
+                    <div>
                     <article key={index} className='item'>
                         <GatsbyImage 
                             image={pathToImage} 
@@ -41,6 +42,8 @@ const Gallery = () => {
                             className='gallery-img'
                         />
                     </article>
+                    </div>
+
                 )
             })}
         </Wrapper>
@@ -62,7 +65,6 @@ const Wrapper = styled.section`
     .gallery-headings{
         display: flex;
         justify-content: center;
-        padding-right: 50em;
     }
 `
 

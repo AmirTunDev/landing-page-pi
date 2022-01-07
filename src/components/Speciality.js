@@ -1,48 +1,198 @@
 import React from 'react'
 import styled from 'styled-components'
+import {useState, useEffect} from "react";
+import SettingsIcon from '@mui/icons-material/Settings';
+import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
+import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 
-const Speciality = () => {
+
+
+function Counter() {
+    const [count, setCount] = useState(0);
+    useEffect(()=> {
+        let timer = setInterval(() => {
+            setCount((count) => count + 1);
+        },50);
+        if (count === 80){
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    },[count])
+    const [count1, setCount1] = useState(0);
+    useEffect(()=> {
+        let timer = setInterval(() => {
+            setCount1((count) => count + 1);
+        },50);
+        if (count === 129){
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    },[count1])
+    const [count2, setCount2] = useState(0);
+    useEffect(()=> {
+        let timer = setInterval(() => {
+            setCount2((count) => count + 1);
+        },50);
+        if (count === 175){
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    },[count2])
+    const [count3, setCount3] = useState(0);
+    useEffect(()=> {
+        let timer = setInterval(() => {
+            setCount3((count) => count + 1);
+        },50);
+        if (count === 100){
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    },[count3])
+    const [count4, setCount4] = useState(0);
+    useEffect(()=> {
+        let timer = setInterval(() => {
+            setCount4((count) => count + 1);
+        },50);
+        if (count === 90){
+            clearInterval(timer);
+        }
+        return () => clearInterval(timer);
+    },[count4])
     return (
         <Wrapper>
-            <h2 className='about-h2'> Specialités </h2>
-            <div className='specilaitySections'>
-                <section>
-                    <p>123</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                    </svg>
-                </section>
-                <section>
-                    <p>23</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
-                        <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
-                    </svg>
-                </section>
-                <section>
-                    <p>123</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bricks" viewBox="0 0 16 16">
-                        <path d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z"/>
-                    </svg>
-                </section>
-            </div>
-        </Wrapper>
+        <h2 className='about-h2'> Specialités </h2>
+        <div className='specilaitySections'>
+            <section className='section1'>
+            <h4> GénieIndustriel </h4>
+              <AccountTreeIcon/>
+              <h1>{count2}</h1>
+            </section>
+            <section className='section1'>
+            <h4> Informatique </h4>
+            <ImportantDevicesIcon/>
+            <h1>{count3}</h1>
+
+            </section>
+            <section className='section3'>
+            <h4> Mécatronique </h4>
+                <SettingsIcon/>
+                <h1> {count} </h1>
+
+            </section>
+            <section className='section1'>
+                <h4> Architecture </h4>
+              <ArchitectureIcon/>
+              <h1>{count1}</h1>
+            </section>
+            <section className='section1'>
+            <h4> Management </h4>
+              <ManageAccountsIcon/>
+              <h1>{count4}</h1>
+
+            </section>
+        </div>
+    </Wrapper>
     )
 }
 
-export default Speciality
 
-const Wrapper = styled.section`
-    margin-bottom: 8%;
+
+export default Counter
+
+const Wrapper = styled.div`
+
+h4::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  color: white;
+
+}
+
+h4:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: white;
+
+
+}
+
+h4::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #842029;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h4 {
+  position: relative;
+
+}
+
+	font-size: 1.1em;
+	width: 100%;
+    
 .about-h2{
     display:flex;
     justify-content:center;
     margin-bottom: 1em;
 }
 .specilaitySections{
-    display:flex;
-    justify-content:space-between;
-    margin: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%
+}
+ .section1{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+    }
+    .section2{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    }
+    .section3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+        color:#842029;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 35%;
+    height: 51%;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
 }
 
 `
