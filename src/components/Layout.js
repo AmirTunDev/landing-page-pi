@@ -16,6 +16,7 @@ const Layout = ({children}) => {
             {children}
              <Inscription />
              <Gallery />
+             <VieUniversite />
             {/* <About />
             <Gallery />
             <VieUniversite /> */}
