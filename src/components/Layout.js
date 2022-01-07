@@ -15,6 +15,7 @@ const Layout = ({children}) => {
             <Navbar />
             {children}
              <Inscription />
+             <Gallery />
             {/* <About />
             <Gallery />
             <VieUniversite /> */}

@@ -26,6 +26,9 @@ const Gallery = () => {
     const nodes = data.allFile.nodes
     return (
         <Wrapper>
+            <div className='gallery-headings'>
+                <h2 className='about-h2'>Evenements</h2>
+            </div>
             {nodes.map((image,index)=>{
                 const { name } = image
                 const pathToImage = getImage(image)
@@ -48,13 +51,18 @@ const Wrapper = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1%;
+    margin-bottom: 10%;
     .item{
         margin-right: 1rem;
     }
     .gallery-img{
         border-radius: 1rem;
 
+    }
+    .gallery-headings{
+        display: flex;
+        justify-content: center;
+        padding-right: 50em;
     }
 `
 
